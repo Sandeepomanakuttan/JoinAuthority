@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sandeep.javaexosia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/authority"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/authority"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JavaExosia">
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".UserSection.Registraction.PersonDetaills"
+            android:exported="true" />
+        <activity android:name=".MainAdmin.commonProfile" />
+        <activity android:name=".UserSection.Registraction.PersonalInformationPage" />
+        <activity android:name=".UserSection.MainPageUser" />
+        <activity android:name=".UserSection.UserMainPage"></activity>
+        <activity android:name=".Employee.EmployeeMainPage" />
+        <activity android:name=".MainAdmin.MassegeMain" />
+        <activity android:name=".Admin.mainHome" />
+        <activity android:name=".MainAdmin.ViewandEditProfilePage" />
+        <activity android:name=".MainAdmin.main_admin_authority_field" />
+        <activity
+            android:name=".flashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserSection.Registraction.verifyOtp" />
+        <activity android:name=".UserSection.Registraction.innerRegpage1" />
+        <activity android:name=".UserSection.Registraction.Registration_form" />
+        <activity android:name=".Login_page" />
+        <activity android:name=".UserSection.Registraction.GenerateOtpPage" />
+    </application>
+
+</manifest>
